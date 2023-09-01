@@ -1,0 +1,25 @@
+{
+  "name": "ex-vee-validate",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vee-validate/i18n": "^4.11.3",
+    "@vee-validate/rules": "^4.11.3",
+    "normalize.css": "^8.0.1",
+    "vee-validate": "^4.11.3",
+    "vue": "^3.3.4",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.1",
+    "node-sass": "^9.0.0",
+    "sass": "^1.66.1",
+    "vite": "^4.4.9"
+  }
+}
