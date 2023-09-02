@@ -28,12 +28,7 @@ const schema = {
 };
 
 const { values, handleSubmit, resetForm } = useForm({
-  validationSchema: schema,
-  initialValues: {
-    withdrawalMethod: "USDT",
-    amountLimit: "100-1000",
-    transactionFee: "0 元",
-  },
+  validationSchema: schema
 });
 
 
