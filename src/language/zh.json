@@ -1,8 +1,10 @@
 {
   "code": "zh-TW",
   "common": {
-    "username": "用户名",
-    "balance": "余额",
+    "label": {
+      "username": "用户名",
+      "balance": "余额"
+    },
     "button": {
       "submit": "送出"
     }

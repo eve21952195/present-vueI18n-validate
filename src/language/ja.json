@@ -1,8 +1,10 @@
 {
   "code": "ja",
   "common": {
-    "username": "ユーザー名",
-    "balance": "残高",
+    "label": {
+      "username": "ユーザー名",
+      "balance": "残高"
+    },
     "button": {
       "submit": "提出する"
     }

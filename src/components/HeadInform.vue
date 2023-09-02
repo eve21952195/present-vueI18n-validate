@@ -6,11 +6,11 @@ const t = inject("t")
 <template>
     <div class="outer">
         <ul>
-            <li>{{ t('common.username')}}</li>
+            <li>{{ t('common.label.username')}}</li>
             <li>evonne</li>
         </ul>
         <ul>
-            <li>{{ t('common.balance')}}</li>
+            <li>{{ t('common.label.balance')}}</li>
             <li>{{ $n(10000, 'currency') }}</li>
         </ul>
     </div>

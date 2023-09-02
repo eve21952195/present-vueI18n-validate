@@ -1,10 +1,12 @@
 {
     "code": "en",
     "common": {
-        "username": "username",
-        "balance": "balance",
+       "label": {
+        "username": "Username",
+        "balance": "Balance"
+       },
         "button": {
-            "submit": "submit"
+            "submit": "Submit"
           }
     },
     "validation": {
@@ -41,14 +43,14 @@
     "tradingPage": {
         "title": "Funds",
         "deposit": {
-            "tab": "deposit",
+            "tab": "Deposit",
             "label": {
-                "tips": "tips",
-                "recipientName": "recipient Name",
-                "recipientAccount": "recipient Account",        
-                "depositAmount": "deposit Amount",
-                "remittanceName": "remittance Name",
-                "transferRemark": "transfer Remark",
+                "tips": "Tips",
+                "recipientName": "Recipient Name",
+                "recipientAccount": "Recipient Account",        
+                "depositAmount": "Deposit Amount",
+                "remittanceName": "Remittance Name",
+                "transferRemark": "Transfer Remark",
                 "OperatingDescription": "Operating Description"
             },
             "content": {
@@ -64,22 +66,22 @@
         "withdraw": {
             "withdrawalType": {
                 "USDT": "USDT",
-                "bankCard": "bank Card"
+                "bankCard": "Bank Card"
             },
-            "tab": "withdraw",
+            "tab": "Withdraw",
             "label": {
-                "withdrawalMethod": "withdrawal Method",
-                "amountLimit": "amount Limit",
-                "withdrawalAmount": "withdrawal Amount",
-                "quantity": "quantity",
-                "transactionFee": "transaction Fee",
-                "withdrawalPassword": "withdrawal Password",
-                "confirmWithdrawalPassword": "confirm Withdrawal Password"
+                "withdrawalMethod": "Withdrawal Method",
+                "amountLimit": "Amount Limit",
+                "withdrawalAmount": "Withdrawal Amount",
+                "quantity": "Quantity",
+                "transactionFee": "Transaction Fee",
+                "withdrawalPassword": "Withdrawal Password",
+                "confirmWithdrawalPassword": "Confirm Withdrawal Password"
             },
             "placeholder": {
-                "pleaseEnterTheWithdrawalAmount": "please Enter The Withdrawal Amount",
-                "pleaseEnterTheWithdrawalPassword": "please Enter The Withdrawal Password",
-                "pleaseConfirmTheWithdrawalPassword": "please Confirm The Withdrawal Password"
+                "pleaseEnterTheWithdrawalAmount": "Please Enter The Withdrawal Amount",
+                "pleaseEnterTheWithdrawalPassword": "Please Enter The Withdrawal Password",
+                "pleaseConfirmTheWithdrawalPassword": "Please Confirm The Withdrawal Password"
             }
         }
     }
