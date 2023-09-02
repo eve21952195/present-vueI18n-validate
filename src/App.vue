@@ -71,7 +71,4 @@ nav{
   padding: 0 2rem;
 }
 
-// @media (min-width: 1024px) {
-
-// }
 </style>

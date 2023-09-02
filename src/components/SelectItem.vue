@@ -33,6 +33,7 @@ const { value, errorMessage } = useField(props.name, undefined, {
 
 <style scoped>
 .form-control {
+  display: flex;
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -45,10 +46,13 @@ const { value, errorMessage } = useField(props.name, undefined, {
 label{
   padding-right: 10px;
   font-weight: bold;
+  white-space: nowrap;
+    flex: 0;
 }
 select{
   width: 80%;
   border: none;
   outline: none;
+  flex: 1 0 0;
 }
 </style>

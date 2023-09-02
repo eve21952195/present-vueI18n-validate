@@ -8,7 +8,7 @@ const props = defineProps({
 <template>
   <div class="form-control">
     <label>{{ label }}</label>
-    <div>{{ content }}</div>
+    <div class="content">{{ content }}</div>
   </div>
 </template>
 
@@ -24,9 +24,14 @@ const props = defineProps({
   border-bottom: 1px solid #ced4da;
   display: flex;
   align-items: center;
-}
-label{
-  padding-right: 10px;
-  font-weight: bold;
+  label {
+    padding-right: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+    flex: 0;
+  }
+  .content {
+    flex: 1 0 0;
+  }
 }
 </style>

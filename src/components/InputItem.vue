@@ -19,7 +19,7 @@ const { value, errorMessage } = useField(props.name, undefined, {
 
 <template>
   <div class="form-control" :class="{ 'is-invalid': errorMessage }">
-    <label :for="name" >{{ label }}</label>
+    <label :for="name">{{ label }}</label>
     <input
       :name="name"
       :id="name"
@@ -45,13 +45,16 @@ const { value, errorMessage } = useField(props.name, undefined, {
   border-bottom: 1px solid #ced4da;
 }
 
-label{
+label {
   padding-right: 10px;
   font-weight: bold;
+  white-space: nowrap;
+  flex: 0;
 }
-input{
+input {
   border: none;
   outline: none;
+  flex: 1 0 0;
 }
 
 .is-invalid {
