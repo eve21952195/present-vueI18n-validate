@@ -2,7 +2,10 @@
     "code": "en",
     "common": {
         "username": "username",
-        "balance": "balance"
+        "balance": "balance",
+        "button": {
+            "submit": "submit"
+          }
     },
     "validation": {
         "messages": {

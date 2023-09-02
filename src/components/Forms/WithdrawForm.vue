@@ -80,7 +80,7 @@ const onSubmit = handleSubmit((values) => {
         )
       "
     ></InputItem>
-    <button class="sumitBtn">送出</button>
+    <button class="sumitBtn">{{t(`common.button.submit`)}}</button>
   </form>
   <h3>useForm-values: {{ values }}</h3>
 </template>

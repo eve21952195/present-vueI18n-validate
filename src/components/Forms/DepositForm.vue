@@ -56,7 +56,7 @@ const onSubmit = handleSubmit((values) => {
         inputBindProps('transferRemark', '', 'pleaseEnterTheTransferRemarks', prefix)
       "
     ></InputItem>
-    <button class="sumitBtn">送出</button>
+    <button class="sumitBtn">{{t(`common.button.submit`)}}</button>
   </form>
   <div class="small">
     <p>{{ t(`${prefix}.label.tips`) }} :</p>

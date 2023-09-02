@@ -2,7 +2,10 @@
   "code": "ja",
   "common": {
     "username": "ユーザー名",
-    "balance": "残高"
+    "balance": "残高",
+    "button": {
+      "submit": "提出する"
+    }
   },
   "validation": {
     "messages": {
