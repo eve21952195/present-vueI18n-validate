@@ -1,12 +1,22 @@
 <script setup>
 import { inject } from "vue";
 import InputItem from "../InputItem.vue";
+import DisplayItem from "../DisplayItem.vue";
 import SelectItem from "../SelectItem.vue";
 import { useForm } from "vee-validate";
 
 const t = inject("t");
+const inputBindProps = inject("inputBindProps");
+const selectBindProps = inject("selectBindProps");
+const fieldContent = inject("fieldContent");
+
 // 前缀
 const prefix = "tradingPage.withdraw";
+// 手续费
+const transactionFee = 15;
+// 提款方式key陣列
+const withdrawalTypeKey = ["USDT", "bankCard"];
+
 
 // 集中宣告規則
 const schema = {
@@ -17,7 +27,7 @@ const schema = {
   confirmWithdrawalPassword: "required|confirmed:@withdrawalPassword",
 };
 
-const { values, handleSubmit } = useForm({
+const { values, handleSubmit, resetForm } = useForm({
   validationSchema: schema,
   initialValues: {
     withdrawalMethod: "USDT",
@@ -26,61 +36,37 @@ const { values, handleSubmit } = useForm({
   },
 });
 
-// 提款方式key陣列
-const withdrawalTypeKey = ["USDT", "bankCard"];
-
-
-// input 要传入的props
-// 把 t方法 放在外层做，单纯传字串
-const inputBindProps = (fieldName, fieldType, fieldPlaceholder) => {
-  return {
-    name: fieldName,
-    type: fieldType,
-    label: t(`${prefix}.${fieldName}`),
-    placeholder: t(`${prefix}.placeholder.${fieldPlaceholder}`),
-  };
-};
-
-// select 要传入的props
-const selectBindProps = (fieldName, selectType) => {
-  let withdrawalTypeValue = withdrawalTypeKey.map((item) => {
-    return t(`${prefix}.${selectType}.${item}`)
-  })
-  return {
-    name: fieldName,
-    label: t(`${prefix}.${fieldName}`),
-    withdrawalTypeKey: withdrawalTypeKey,
-    withdrawalTypeValue: withdrawalTypeValue
-  };
-};
 
 // 提交
 const onSubmit = handleSubmit((values) => {
   console.log(values);
+  resetForm();
   alert("验证通过时执行");
 });
 </script>
 
 <template>
   <form @submit="onSubmit">
-    <SelectItem v-bind="selectBindProps('withdrawalMethod', 'withdrawalType')"></SelectItem>
-    <!-- <InputItem v-bind="inputBindProps('amountLimit', '', '')"></InputItem> -->
+    <SelectItem v-bind="selectBindProps('withdrawalMethod', 'withdrawalType', withdrawalTypeKey, prefix)"></SelectItem>
+    <DisplayItem v-bind="fieldContent('amountLimit', '10-1000', prefix)"></DisplayItem>
     <InputItem
       v-bind="
         inputBindProps(
           'withdrawalAmount',
           'number',
-          'pleaseEnterTheWithdrawalAmount'
+          'pleaseEnterTheWithdrawalAmount',
+          prefix
         )
       "
     ></InputItem>
-    <!-- <InputItem v-bind="inputBindProps('transactionFee', '', '')"></InputItem> -->
+    <DisplayItem v-bind="fieldContent('transactionFee', $n( transactionFee, 'currency'), prefix)"></DisplayItem>
     <InputItem
       v-bind="
         inputBindProps(
           'withdrawalPassword',
           'password',
-          'pleaseEnterTheWithdrawalPassword'
+          'pleaseEnterTheWithdrawalPassword',
+          prefix
         )
       "
     ></InputItem>
@@ -89,12 +75,28 @@ const onSubmit = handleSubmit((values) => {
         inputBindProps(
           'confirmWithdrawalPassword',
           'password',
-          'pleaseConfirmTheWithdrawalPassword'
+          'pleaseConfirmTheWithdrawalPassword',
+          prefix
         )
       "
     ></InputItem>
-    <button>送出</button>
+    <button class="sumitBtn">送出</button>
   </form>
   <h3>useForm-values: {{ values }}</h3>
 </template>
+
+<style scoped lang="scss">
+form{
+  margin-bottom: 10px;
+}
+.sumitBtn {
+  margin-top: 30px;
+  color: #fff;
+  background-color: #007bff;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+}
+</style>
 

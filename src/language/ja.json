@@ -40,14 +40,19 @@
     "title": "資金",
     "deposit": {
       "tab": "チャージ",
-      "tips": "温馨なお知らせ",
-      "depositAmount": "入金額",
-      "remittanceName": "送金者の名前",
-      "transferRemark": "振込みの備考",
-      "OperatingDescription": "操作説明",
-      "OperatingDescriptionContent": "お支払いの際は、金額と注文番号をメモしてください",
+      "label": {
+        "tips": "温馨なお知らせ",
+        "recipientName": "受取人の名前",
+        "recipientAccount": "受取り口座番号",
+        "depositAmount": "入金額",
+        "remittanceName": "送金者の名前",
+        "transferRemark": "振込みの備考",
+        "OperatingDescription": "操作説明"
+        
+      },
       "content": {
-        "tipsContent": "最低チャージ金額は{min} 、最大チャージ金額は{max}です。"
+        "tipsContent": "最低チャージ金額は{min} 、最大チャージ金額は{max}です。",
+        "OperatingDescriptionContent": "お支払いの際は、金額と注文番号をメモしてください"
       },
       "placeholder": {
         "pleaseEnterTheDepositAmount": "入金額を入力してください",
@@ -61,17 +66,19 @@
         "bankCard": "銀行カード"
       },
       "tab": "引き出し",
-      "withdrawalMethod": "引き出し方法",
-      "amountLimit": "金額制限",
-      "withdrawalAmount": "引き出し金額",
-      "quantity": "数量",
-      "transactionFee": "手数料",
-      "withdrawalPassword": "引き出しパスワード",
-      "confirmWithdrawalPassword": "引き出しパスワードの確認",
-      "placeholder":{
-        "pleaseEnterTheWithdrawalAmount":"出金金額を入力してください",
-        "pleaseEnterTheWithdrawalPassword":"出金パスワードを入力してください",
-        "pleaseConfirmTheWithdrawalPassword":"出金パスワードを確認してください"
+      "label": {
+        "withdrawalMethod": "引き出し方法",
+        "amountLimit": "金額制限",
+        "withdrawalAmount": "引き出し金額",
+        "quantity": "数量",
+        "transactionFee": "手数料",
+        "withdrawalPassword": "引き出しパスワード",
+        "confirmWithdrawalPassword": "引き出しパスワードの確認"
+      },
+      "placeholder": {
+        "pleaseEnterTheWithdrawalAmount": "出金金額を入力してください",
+        "pleaseEnterTheWithdrawalPassword": "出金パスワードを入力してください",
+        "pleaseConfirmTheWithdrawalPassword": "出金パスワードを確認してください"
       }
     }
   }

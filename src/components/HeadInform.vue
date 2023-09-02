@@ -18,13 +18,13 @@ const t = inject("t")
 
 <style scoped lang="scss">
 .outer{
-    border: 1px solid #736b5e;
+    border: 1px solid #dbd0bf;
     display: flex;
+    margin: 30px 0;
     ul{
-        border: 1px solid #736b5e;
         list-style: none;
         flex: 1 0;
-        padding: 0;
+        padding: 10PX 0;
         text-align: center;
     }
 }</style>

@@ -3,7 +3,6 @@ import DepositForm from '../components/Forms/DepositForm.vue'
 </script>
 
 <template>
-    <h1>DepositView~~~~~~~~~~~</h1>
     <div class="main-form">
         <DepositForm></DepositForm>
     </div>

@@ -1,8 +1,8 @@
 {
   "code": "zh-TW",
   "common": {
-    "username":"用户名",
-    "balance":"余额"
+    "username": "用户名",
+    "balance": "余额"
   },
   "validation": {
     "messages": {
@@ -39,19 +39,23 @@
     "title": "资金",
     "deposit": {
       "tab": "充值",
-      "tips": "温馨提示",
-      "depositAmount": "存入金额",
-      "remittanceName": "汇款姓名",
-      "transferRemark": "转账备注",
-      "OperatingDescription": "操作说明",
-      "OperatingDescriptionContent": "支付时请注金额和订单号",
+      "label": {
+        "tips": "温馨提示",
+        "recipientName": "收款姓名",
+        "recipientAccount": "收款账号",
+        "depositAmount": "存入金额",
+        "remittanceName": "汇款姓名",
+        "transferRemark": "转账备注",
+        "OperatingDescription": "操作说明"
+      },
       "content": {
-        "tipsContent": "最低充值金额 {min} ，最大充值金额 {max} "
+        "tipsContent": "最低充值金额 {min} ，最大充值金额 {max} ",
+        "OperatingDescriptionContent": "支付时请注金额和订单号"
       },
       "placeholder": {
-        "pleaseEnterTheDepositAmount":"请输入@:tradingPage.deposit.depositAmount",
-        "pleaseEnterTheSenderName":"请输入@:tradingPage.deposit.remittanceName",
-        "pleaseEnterTheTransferRemarks":"请输入@:tradingPage.deposit.transferRemark"
+        "pleaseEnterTheDepositAmount": "请输入@:tradingPage.deposit.label.depositAmount",
+        "pleaseEnterTheSenderName": "请输入@:tradingPage.deposit.label.remittanceName",
+        "pleaseEnterTheTransferRemarks": "请输入@:tradingPage.deposit.label.transferRemark"
       }
     },
     "withdraw": {
@@ -60,17 +64,19 @@
         "bankCard": "银行卡"
       },
       "tab": "提款",
-      "withdrawalMethod":"提款方式",
-      "amountLimit":"金额限制",
-      "withdrawalAmount":"提款金额",
-      "quantity":"数量",
-      "transactionFee":"手续费",
-      "withdrawalPassword":"提款密码",
-      "confirmWithdrawalPassword": "确认提款密码",
-      "placeholder":{
-        "pleaseEnterTheWithdrawalAmount":"请输入提款金额",
-        "pleaseEnterTheWithdrawalPassword":"请输入提款密码",
-        "pleaseConfirmTheWithdrawalPassword":"请确认提款密码"
+      "label": {
+        "withdrawalMethod": "提款方式",
+        "amountLimit": "金额限制",
+        "withdrawalAmount": "提款金额",
+        "quantity": "数量",
+        "transactionFee": "手续费",
+        "withdrawalPassword": "提款密码",
+        "confirmWithdrawalPassword": "确认提款密码"
+      },
+      "placeholder": {
+        "pleaseEnterTheWithdrawalAmount": "请输入提款金额",
+        "pleaseEnterTheWithdrawalPassword": "请输入提款密码",
+        "pleaseConfirmTheWithdrawalPassword": "请确认提款密码"
       }
     }
   }

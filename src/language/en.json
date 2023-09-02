@@ -39,14 +39,18 @@
         "title": "Funds",
         "deposit": {
             "tab": "deposit",
-            "tips": "tips",
-            "depositAmount": "deposit Amount",
-            "remittanceName": "remittance Name",
-            "transferRemark": "transfer Remark",
-            "OperatingDescription": "Operating Description",
-            "OperatingDescriptionContent": "Please note the amount and order number when paying",
+            "label": {
+                "tips": "tips",
+                "recipientName": "recipient Name",
+                "recipientAccount": "recipient Account",        
+                "depositAmount": "deposit Amount",
+                "remittanceName": "remittance Name",
+                "transferRemark": "transfer Remark",
+                "OperatingDescription": "Operating Description"
+            },
             "content": {
-                "tipsContent": "Minimum recharge amount is {min}, maximum recharge amount is {max}"
+                "tipsContent": "Minimum recharge amount is {min}, maximum recharge amount is {max}",
+                "OperatingDescriptionContent": "Please note the amount and order number when paying"
             },
             "placeholder": {
                 "pleaseEnterTheDepositAmount": "Please Enter The DepositAmount",
@@ -60,13 +64,15 @@
                 "bankCard": "bank Card"
             },
             "tab": "withdraw",
-            "withdrawalMethod": "withdrawal Method",
-            "amountLimit": "amount Limit",
-            "withdrawalAmount": "withdrawal Amount",
-            "quantity": "quantity",
-            "transactionFee": "transaction Fee",
-            "withdrawalPassword": "withdrawal Password",
-            "confirmWithdrawalPassword": "confirm Withdrawal Password",
+            "label": {
+                "withdrawalMethod": "withdrawal Method",
+                "amountLimit": "amount Limit",
+                "withdrawalAmount": "withdrawal Amount",
+                "quantity": "quantity",
+                "transactionFee": "transaction Fee",
+                "withdrawalPassword": "withdrawal Password",
+                "confirmWithdrawalPassword": "confirm Withdrawal Password"
+            },
             "placeholder": {
                 "pleaseEnterTheWithdrawalAmount": "please Enter The Withdrawal Amount",
                 "pleaseEnterTheWithdrawalPassword": "please Enter The Withdrawal Password",
