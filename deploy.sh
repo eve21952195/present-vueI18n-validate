@@ -1,6 +1,7 @@
 #! deploy.sh
 
 # abort on errors
+#當發生錯誤時終止腳本運行
 set -e
 
 # build
