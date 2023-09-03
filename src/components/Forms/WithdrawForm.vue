@@ -20,7 +20,6 @@ const withdrawalTypeKey = ["USDT", "bankCard"];
 
 // 集中宣告規則
 const schema = {
-  // withdrawalMethod: "required",
   amountLimit: "required", // 这限制是后端返回
   withdrawalAmount: "required|between:100,1000",
   withdrawalPassword: "required|min:6",
@@ -28,7 +27,11 @@ const schema = {
 };
 
 const { values, handleSubmit, resetForm } = useForm({
-  validationSchema: schema
+  validationSchema: schema,
+  // 設置預設值
+  initialValues: {
+    withdrawalMethod: 'USDT'
+  }
 });
 
 
