@@ -11,7 +11,7 @@ const i18n = createI18n({
     locale: "zh",
     fallbackLocale: "zh",
     messages: {
-        zh: zh,
+        zh,
         en,
         ja
     },
