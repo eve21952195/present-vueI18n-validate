@@ -13,6 +13,7 @@ const fieldContent = inject("fieldContent")
 const schema = {
   depositAmount: "required|min_value:50",
   remittanceName: "required|min:8",
+  characterslimit: "required|biger: 8"
 };
 
 //
@@ -71,6 +72,8 @@ const onSubmit = handleSubmit((values) => {
   </div>
 
   <h3>useForm-values: {{ values }}</h3>
+  <hr>
+  <InputItem v-bind="inputBindProps('characterslimit', '', 'pleaseEntercharacterslimit', prefix)"></InputItem>
 </template>
 
 <style scoped lang="scss">

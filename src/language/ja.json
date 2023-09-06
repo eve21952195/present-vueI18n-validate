@@ -38,7 +38,8 @@
       "required": "{field}は必須項目です",
       "required_if": "{field}は必須項目です",
       "size": "{field}は 0:{size}KB 以内でなければなりません",
-      "url": "{field}は有効なURLではありません"
+      "url": "{field}は有効なURLではありません",
+      "biger": "{field} には少なくとも {limit} 文字が含まれている必要があります~~~"
     }
   },
   "tradingPage": {
@@ -52,7 +53,8 @@
         "depositAmount": "入金額",
         "remittanceName": "送金者の名前",
         "transferRemark": "振込みの備考",
-        "OperatingDescription": "操作説明"
+        "OperatingDescription": "操作説明",
+        "characterslimit": "文字数制限"
         
       },
       "content": {
@@ -62,7 +64,8 @@
       "placeholder": {
         "pleaseEnterTheDepositAmount": "入金額を入力してください",
         "pleaseEnterTheSenderName": "送金人の名前を入力してください",
-        "pleaseEnterTheTransferRemarks": "振込みの備考を入力してください"
+        "pleaseEnterTheTransferRemarks": "振込みの備考を入力してください",
+        "pleaseEntercharacterslimit": "@:tradingPage.deposit.label.characterslimit を入力してください"
       }
     },
     "withdraw": {

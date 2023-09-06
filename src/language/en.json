@@ -37,7 +37,8 @@
             "required_if": "The {field} field is required",
             "required": "The {field} field is required",
             "size": "The {field} field size must be less than 0:{size}KB",
-            "url": "The {field} field is not a valid URL"
+            "url": "The {field} field is not a valid URL",
+            "biger": "{field} must be at least {limit} characters~~~"
         }
     },
     "tradingPage": {
@@ -51,7 +52,9 @@
                 "depositAmount": "Deposit Amount",
                 "remittanceName": "Remittance Name",
                 "transferRemark": "Transfer Remark",
-                "OperatingDescription": "Operating Description"
+                "OperatingDescription": "Operating Description",
+                "characterslimit": "Characters Limit"
+            
             },
             "content": {
                 "tipsContent": "Minimum recharge amount is {min}, maximum recharge amount is {max}",
@@ -60,7 +63,8 @@
             "placeholder": {
                 "pleaseEnterTheDepositAmount": "Please Enter The DepositAmount",
                 "pleaseEnterTheSenderName": "Please Enter The Sender'S Name",
-                "pleaseEnterTheTransferRemarks": "Please Enter The Transfer Remarks"
+                "pleaseEnterTheTransferRemarks": "Please Enter The Transfer Remarks",
+                "pleaseEntercharacterslimit": "Please Enter @:tradingPage.deposit.label.characterslimit"
             }
         },
         "withdraw": {

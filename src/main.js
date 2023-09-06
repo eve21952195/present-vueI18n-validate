@@ -1,6 +1,8 @@
 import './assets/main.css'
 import 'normalize.css/normalize.css'
 
+
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -23,6 +25,7 @@ import ja from './language/ja.json'
 Object.keys(AllRules).forEach((rule) => {
     defineRule(rule, AllRules[rule]);
   });
+
 
 // 洗資料 因為 vee 只接受格式為 messages: {..}
 function extractMessages(originData) {

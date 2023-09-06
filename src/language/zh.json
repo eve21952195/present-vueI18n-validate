@@ -37,7 +37,8 @@
       "required": "{field} 為必填",
       "required_if": "{field} 為必填",
       "size": "{field} 的檔案須小於 0:{size}KB",
-      "url": "{field} 須為有效的URL"
+      "url": "{field} 須為有效的URL",
+      "biger": "{field} 必須至少包含 {limit} 個字符~~~"
     }
   },
   "tradingPage": {
@@ -51,7 +52,8 @@
         "depositAmount": "存入金额",
         "remittanceName": "汇款姓名",
         "transferRemark": "转账备注",
-        "OperatingDescription": "操作说明"
+        "OperatingDescription": "操作说明",
+        "characterslimit": "自訂字數限制"
       },
       "content": {
         "tipsContent": "最低充值金额 {min} ，最大充值金额 {max} ",
@@ -60,7 +62,8 @@
       "placeholder": {
         "pleaseEnterTheDepositAmount": "请输入@:tradingPage.deposit.label.depositAmount",
         "pleaseEnterTheSenderName": "请输入@:tradingPage.deposit.label.remittanceName",
-        "pleaseEnterTheTransferRemarks": "请输入@:tradingPage.deposit.label.transferRemark"
+        "pleaseEnterTheTransferRemarks": "请输入@:tradingPage.deposit.label.transferRemark",
+        "pleaseEntercharacterslimit": "請輸入@:tradingPage.deposit.label.characterslimit"
       }
     },
     "withdraw": {
